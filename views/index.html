@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Data Transfer</title>
+	</head>
+	<body>
+		<h1 id="greeting-heading"></h1>
+
+		<div>
+			<p>Those are the world's continents:</p>
+			<ul id="continents-list"></ul>
+		</div>
+
+		<!-- 2. Stringify the data object in the template file inside a hidden element with an Id -->
+		<span id="greeting" hidden><%= JSON.stringify(it.greeting()) %></span>
+		<span id="continents" hidden><%= JSON.stringify(it.continents) %></span>
+
+		<script type="module" src="/static/main.js"></script>
+	</body>
+</html>
